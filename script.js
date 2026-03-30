@@ -1,54 +1,42 @@
-/* ============================================
-   ROSEWAL ALMEIDA — PORTFOLIO SCRIPTS
-   ============================================ */
+/* Rosewal Almeida — Portfolio Scripts */
 
-// --- Live Dubai time in nav ---
+// Dubai live clock
 function updateTime() {
-    const now = new Date();
-    const dubaiTime = now.toLocaleTimeString('en-GB', {
-        timeZone: 'Asia/Dubai',
-        hour: '2-digit',
-        minute: '2-digit',
-        hour12: false
-    });
     const el = document.getElementById('navTime');
-    if (el) el.textContent = dubaiTime;
+    if (!el) return;
+    el.textContent = new Date().toLocaleTimeString('en-GB', {
+        timeZone: 'Asia/Dubai', hour: '2-digit', minute: '2-digit', hour12: false
+    });
 }
 updateTime();
 setInterval(updateTime, 30000);
 
-// --- Scroll Reveal ---
-const revealEls = document.querySelectorAll(
-    '.section-heading, .section-sub, .scroll-hint, ' +
-    '.project-card, .about-text, ' +
-    '.exp-row, .footer-top, .footer-blurb, .footer-email'
+// Scroll reveal with stagger
+const els = document.querySelectorAll(
+    '.section-title, .section-sub, .hero-badge, .hero-title, .hero-sub, .hero-ctas, ' +
+    '.hero-card, .hero-tagline, .pcard, ' +
+    '.about-right, .exp-row, .cert-card, ' +
+    '.footer-head, .footer-text, .footer-email'
 );
+els.forEach(e => e.classList.add('reveal'));
 
-revealEls.forEach(el => el.classList.add('reveal'));
-
-const observer = new IntersectionObserver((entries) => {
+const obs = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            const parent = entry.target.parentElement;
-            const siblings = parent ? parent.querySelectorAll('.reveal') : [];
-            const idx = Array.from(siblings).indexOf(entry.target);
-            entry.target.style.transitionDelay = `${idx * 50}ms`;
+            const p = entry.target.parentElement;
+            const siblings = p ? Array.from(p.querySelectorAll('.reveal')) : [];
+            const i = siblings.indexOf(entry.target);
+            entry.target.style.transitionDelay = `${Math.max(0, i) * 60}ms`;
             entry.target.classList.add('visible');
         }
     });
-}, {
-    threshold: 0.08,
-    rootMargin: '0px 0px -40px 0px'
-});
+}, { threshold: 0.06, rootMargin: '0px 0px -30px 0px' });
 
-revealEls.forEach(el => observer.observe(el));
+els.forEach(e => obs.observe(e));
 
-// --- Navbar subtle shadow on scroll ---
+// Nav shadow
 const nav = document.querySelector('.nav');
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
-        nav.style.boxShadow = '0 1px 12px rgba(0,0,0,0.06)';
-    } else {
-        nav.style.boxShadow = 'none';
-    }
+    nav.style.boxShadow = window.scrollY > 30
+        ? '0 1px 12px rgba(0,0,0,0.05)' : 'none';
 });

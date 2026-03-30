@@ -1,17 +1,16 @@
 # Rosewal Almeida — Data Analyst Portfolio
 
-Light, warm Framer-inspired portfolio. Vanilla HTML/CSS/JS, zero dependencies.
+Premium Framer-inspired portfolio. Bricolage Grotesque + Outfit fonts. Vanilla HTML/CSS/JS.
 
-## Structure
-- **Hero** — Large serif typography, tagline
-- **Projects** — 6 cards with gradient backgrounds, real GitHub + Power BI links
-- **About** — Clean paragraph section
-- **Experience** — Minimal table layout (4 roles)
-- **Tech Stack** — Scrolling marquee with 15 tools
-- **Footer** — Dark contact section with email, GitHub, LinkedIn
+## Sections
+- Hero with stat cards + animated availability badge
+- 6 Project cards with SVG preview illustrations
+- About (2-column layout)
+- Experience table
+- Education table
+- Certifications grid (4 cards with brand logos)
+- Scrolling tech stack marquee
+- Dark rounded footer
 
 ## Deploy
-Upload `index.html`, `style.css`, `script.js`, `README.md` to your GitHub repo and push. GitHub Pages will update automatically.
-
-## Tech
-HTML5, CSS3, vanilla JS, Google Fonts (DM Sans + Instrument Serif)
+Replace files in `roswel0710/portfolio` repo → GitHub Pages auto-updates.

@@ -1,107 +1,54 @@
 /* ============================================
-   ROSWEL ALMEIDA — PORTFOLIO SCRIPTS
+   ROSEWAL ALMEIDA — PORTFOLIO SCRIPTS
    ============================================ */
 
-// --- Mobile Navigation ---
-const navToggle = document.getElementById('navToggle');
-const mobileMenu = document.getElementById('mobileMenu');
-
-navToggle.addEventListener('click', () => {
-    mobileMenu.classList.toggle('active');
-});
-
-mobileMenu.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-        mobileMenu.classList.remove('active');
+// --- Live Dubai time in nav ---
+function updateTime() {
+    const now = new Date();
+    const dubaiTime = now.toLocaleTimeString('en-GB', {
+        timeZone: 'Asia/Dubai',
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: false
     });
-});
-
-// --- Resume Modal ---
-const resumeModal = document.getElementById('resumeModal');
-const modalClose = document.getElementById('modalClose');
-const resumeBtn = document.getElementById('resumeBtn');
-const viewResumeBtn = document.getElementById('viewResumeBtn');
-const resumeBtnMobile = document.getElementById('resumeBtnMobile');
-
-function openModal() {
-    resumeModal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-    mobileMenu.classList.remove('active');
+    const el = document.getElementById('navTime');
+    if (el) el.textContent = dubaiTime;
 }
-
-function closeModal() {
-    resumeModal.classList.remove('active');
-    document.body.style.overflow = '';
-}
-
-resumeBtn.addEventListener('click', openModal);
-viewResumeBtn.addEventListener('click', openModal);
-resumeBtnMobile.addEventListener('click', openModal);
-modalClose.addEventListener('click', closeModal);
-
-resumeModal.addEventListener('click', (e) => {
-    if (e.target === resumeModal) closeModal();
-});
-
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeModal();
-});
+updateTime();
+setInterval(updateTime, 30000);
 
 // --- Scroll Reveal ---
-const revealElements = document.querySelectorAll(
-    '.section-title, .section-subtitle, .section-icon, ' +
-    '.toolkit-card, .project-card, ' +
-    '.timeline-item, ' +
-    '.contact-card'
+const revealEls = document.querySelectorAll(
+    '.section-heading, .section-sub, .scroll-hint, ' +
+    '.project-card, .about-text, ' +
+    '.exp-row, .footer-top, .footer-blurb, .footer-email'
 );
 
-revealElements.forEach(el => el.classList.add('reveal'));
+revealEls.forEach(el => el.classList.add('reveal'));
 
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
+    entries.forEach(entry => {
         if (entry.isIntersecting) {
-            // Stagger animation for grid items
-            const siblings = entry.target.parentElement.querySelectorAll('.reveal');
-            const index = Array.from(siblings).indexOf(entry.target);
-            entry.target.style.transitionDelay = `${index * 60}ms`;
+            const parent = entry.target.parentElement;
+            const siblings = parent ? parent.querySelectorAll('.reveal') : [];
+            const idx = Array.from(siblings).indexOf(entry.target);
+            entry.target.style.transitionDelay = `${idx * 50}ms`;
             entry.target.classList.add('visible');
         }
     });
 }, {
-    threshold: 0.1,
+    threshold: 0.08,
     rootMargin: '0px 0px -40px 0px'
 });
 
-revealElements.forEach(el => observer.observe(el));
+revealEls.forEach(el => observer.observe(el));
 
-// --- Navbar shadow on scroll ---
-const nav = document.getElementById('nav');
+// --- Navbar subtle shadow on scroll ---
+const nav = document.querySelector('.nav');
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 30) {
-        nav.style.borderBottomColor = 'rgba(255,255,255,0.06)';
-        nav.style.boxShadow = '0 2px 20px rgba(0,0,0,0.3)';
+    if (window.scrollY > 40) {
+        nav.style.boxShadow = '0 1px 12px rgba(0,0,0,0.06)';
     } else {
-        nav.style.borderBottomColor = '';
-        nav.style.boxShadow = '';
+        nav.style.boxShadow = 'none';
     }
-});
-
-// --- Active nav link highlight ---
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('.nav-links a');
-
-window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(section => {
-        const top = section.offsetTop - 100;
-        if (window.scrollY >= top) {
-            current = section.getAttribute('id');
-        }
-    });
-    navLinks.forEach(link => {
-        link.style.color = '';
-        if (link.getAttribute('href') === `#${current}`) {
-            link.style.color = '#00C896';
-        }
-    });
 });

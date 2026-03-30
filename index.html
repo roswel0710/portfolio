@@ -3,489 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rosewal Almeida | Data Analyst & Retail Operations</title>
-    <meta name="description" content="Microsoft Certified (PL-300) Data Analyst with 7+ years in retail & FMCG. Skilled in Power BI, SQL, Python. Based in Dubai, open to roles in UAE and India.">
-    <meta name="keywords" content="Data Analyst, Retail Operations, Power BI, SQL, Python, FMCG, Dubai, PL-300, Customer Analytics, Trade Marketing, Store Manager">
+    <title>Rosewal Almeida</title>
+    <meta name="description" content="Microsoft Certified (PL-300) Data Analyst with 7+ years in retail & FMCG. Power BI, SQL, Python. Based in Dubai.">
+    <meta name="keywords" content="Data Analyst, Retail, Power BI, SQL, Python, FMCG, Dubai, PL-300">
     <meta name="author" content="Rosewal Simon Almeida">
-    <meta property="og:title" content="Rosewal Almeida | Data Analyst & Retail Operations">
-    <meta property="og:description" content="Microsoft Certified (PL-300) Data Analyst with 7+ years in retail & FMCG. Based in Dubai.">
-    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rosewal Almeida | Data Analyst">
+    <meta property="og:description" content="Microsoft Certified Data Analyst. 7+ years retail & FMCG. Dubai.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- ===================== NAVIGATION ===================== -->
-    <nav class="nav" id="nav">
+    <!-- NAV -->
+    <nav class="nav">
         <div class="nav-inner">
-            <a href="#" class="nav-logo">R<span class="accent">.</span>A</a>
-            <div class="nav-links" id="navLinks">
+            <a href="#" class="nav-name">Rosewal Almeida</a>
+            <div class="nav-links">
                 <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
+                <a href="#work">Projects</a>
                 <a href="#contact">Contact</a>
             </div>
-            <a href="javascript:void(0)" class="nav-resume" id="resumeBtn">Resume ↗</a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-        <div class="mobile-menu" id="mobileMenu">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
-            <a href="javascript:void(0)" class="mobile-resume" id="resumeBtnMobile">Resume ↗</a>
+            <div class="nav-meta">
+                <span>Dubai</span>
+                <span class="nav-dot">*</span>
+                <span class="nav-time" id="navTime"></span>
+            </div>
         </div>
     </nav>
 
-    <!-- ===================== HERO ===================== -->
+    <!-- HERO -->
     <header class="hero" id="hero">
-        <div class="hero-content">
-            <div class="hero-intro">
-                <span class="hero-greeting">Hey I'M Rosewal Almeida</span>
-                <span class="hero-status">Available for Data Analyst Roles · Dubai, UAE</span>
-            </div>
-            <h1 class="hero-title">
-                Translating Retail Data Into <span class="accent">Revenue Insights.</span>
-            </h1>
-            <p class="hero-description">
-                I am a <strong>Microsoft Certified (PL-300) Data Analyst</strong> with 7+ years in retail & FMCG (Sainsbury's, ITC Limited). I don't just build dashboards—<strong>I build analysis that drives sales performance</strong>, optimises operations, and turns messy data into decisions that matter.
-            </p>
-            <div class="hero-actions">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="javascript:void(0)" class="btn btn-ghost" id="viewResumeBtn">View Resume</a>
-            </div>
-            <div class="hero-metrics">
-                <div class="metric">
-                    <span class="metric-value">£945K+</span>
-                    <span class="metric-label">Monthly Revenue Managed</span>
-                </div>
-                <div class="metric">
-                    <span class="metric-value">24%</span>
-                    <span class="metric-label">YoY Sales Growth Driven</span>
-                </div>
-                <div class="metric">
-                    <span class="metric-value">1,000+</span>
-                    <span class="metric-label">Retail Outlets Supported</span>
-                </div>
-                <div class="metric">
-                    <span class="metric-value">PL-300</span>
-                    <span class="metric-label">Microsoft Certified</span>
-                </div>
-            </div>
+        <h1 class="hero-title">I'm Rosewal</h1>
+        <p class="hero-sub">Microsoft Certified (PL-300) Data Analyst with 7+ years turning retail complexity into business decisions using Power BI, SQL, and Python.</p>
+        <div class="hero-tagline">
+            <h2 class="hero-big">A data analyst</h2>
+            <h2 class="hero-big hero-italic">who speaks retail</h2>
         </div>
-        <div class="hero-orb"></div>
     </header>
 
-    <!-- ===================== ABOUT / TOOLKIT ===================== -->
-    <section class="section" id="about">
+    <!-- PROJECTS -->
+    <section class="section" id="work">
         <div class="container">
-            <div class="section-icon">◐</div>
-            <h2 class="section-title">My Core Toolkit<span class="accent">.</span></h2>
-            <p class="section-subtitle">
-                Customer-focused retail leader turned data analyst. I combine deep operational knowledge with technical analytics skills to deliver insights that actually get used on the shop floor and in the boardroom.
-            </p>
-            <div class="toolkit-grid">
-                <div class="toolkit-card">
-                    <span class="toolkit-icon">📊</span>
-                    <span class="toolkit-name">Power BI, DAX & Power Query</span>
-                </div>
-                <div class="toolkit-card">
-                    <span class="toolkit-icon">🐘</span>
-                    <span class="toolkit-name">SQL (PostgreSQL, MySQL)</span>
-                </div>
-                <div class="toolkit-card">
-                    <span class="toolkit-icon">🐍</span>
-                    <span class="toolkit-name">Python (Pandas, NumPy, Seaborn)</span>
-                </div>
-                <div class="toolkit-card">
-                    <span class="toolkit-icon">📗</span>
-                    <span class="toolkit-name">Excel (Advanced Formulas, PivotTables)</span>
-                </div>
-                <div class="toolkit-card">
-                    <span class="toolkit-icon">📈</span>
-                    <span class="toolkit-name">IBM Cognos, Looker Studio</span>
-                </div>
-                <div class="toolkit-card">
-                    <span class="toolkit-icon">💡</span>
-                    <span class="toolkit-name">Data Storytelling & KPI Reporting</span>
-                </div>
-            </div>
-        </div>
-    </section>
+            <h2 class="section-heading">Featured work</h2>
+            <span class="scroll-hint">Scroll ↓</span>
 
-    <!-- ===================== PROJECTS ===================== -->
-    <section class="section" id="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Work<span class="accent">.</span></h2>
-
-            <!-- Project 1: Blinkit -->
-            <div class="project-card">
-                <div class="project-header">
-                    <span class="project-number">01</span>
-                    <span class="project-category">— Sales Analytics</span>
-                </div>
-                <h3 class="project-name">Blinkit Sales Analysis Dashboard</h3>
-                <div class="project-tags">
-                    <span>Power BI</span><span>SQL</span><span>DAX</span>
-                </div>
-                <div class="project-par">
-                    <div class="par-item">
-                        <span class="par-label">Problem</span>
-                        <p>Retail sales data across <strong>8,500+</strong> item records lacked a unified view, making it difficult to compare outlet performance and product trends.</p>
+            <div class="projects-grid">
+                <a href="https://github.com/roswel0710/Blinkit-Project/blob/main/README.md" target="_blank" class="project-card">
+                    <div class="project-info">
+                        <h3>Blinkit Sales Analysis Dashboard</h3>
+                        <p>Interactive Power BI dashboard analysing 8,500+ retail item records across outlet formats. SQL aggregation + DAX measures for consistent KPIs.</p>
+                        <span class="project-cta">View Project ↗</span>
                     </div>
-                    <div class="par-item">
-                        <span class="par-label">Action</span>
-                        <p>Used advanced SQL for aggregation and validation, then built an executive-ready Power BI dashboard with DAX measures for consistent KPIs across filters and visuals.</p>
+                    <div class="project-img" style="background: linear-gradient(135deg, #e0d4a6, #c9b87a);">
+                        <span class="project-emoji">📊</span>
+                        <span class="project-tool">Power BI + SQL</span>
                     </div>
-                    <div class="par-item">
-                        <span class="par-label">Result</span>
-                        <p>Delivered an interactive dashboard uncovering insights into sales performance, product characteristics, and outlet-level trends for decision-making.</p>
-                    </div>
-                </div>
-                <div class="project-impact">
-                    <strong>Impact:</strong> Executive-ready dashboard designed for interactive exploration across multiple outlet formats and locations.
-                </div>
-                <div class="project-links-row">
-                    <a href="https://github.com/roswel0710/Blinkit-Project/blob/main/README.md" target="_blank" class="project-link">View on GitHub ↗</a>
-                    <a href="https://app.powerbi.com/view?r=eyJrIjoiMzY5ZDdkYTQtNjNlYi00ZDU0LTljOGYtZDRmMzk5YzYwMTU3IiwidCI6ImJjZWYxYWJlLWVjZjgtNDMxNy1iM2FmLTY0NzQ3MmMwM2Y3OSJ9" target="_blank" class="project-link">Live Dashboard ↗</a>
-                </div>
-            </div>
-
-            <!-- Project 2: Plant Co -->
-            <div class="project-card">
-                <div class="project-header">
-                    <span class="project-number">02</span>
-                    <span class="project-category">— Performance Reporting</span>
-                </div>
-                <h3 class="project-name">Plant Co. Performance Report</h3>
-                <div class="project-tags">
-                    <span>Power BI</span><span>DAX</span><span>Power Query</span><span>Excel</span>
-                </div>
-                <div class="project-par">
-                    <div class="par-item">
-                        <span class="par-label">Problem</span>
-                        <p>No unified way to compare Year-to-Date (YTD) vs Prior Year-to-Date (PYTD) performance across sales, gross profit, and quantity.</p>
-                    </div>
-                    <div class="par-item">
-                        <span class="par-label">Action</span>
-                        <p>Built an interactive Power BI dashboard with advanced DAX Switch Measures for seamless metric toggling and variance analysis with conditional formatting.</p>
-                    </div>
-                    <div class="par-item">
-                        <span class="par-label">Result</span>
-                        <p>Highlighted underperforming accounts and growth opportunities, reducing manual reporting time and accelerating decision-making.</p>
-                    </div>
-                </div>
-                <div class="project-impact">
-                    <strong>Impact:</strong> Single dynamic view enabling instant metric switching across YTD vs PYTD for sales, gross profit, and quantity.
-                </div>
-                <div class="project-links-row">
-                    <a href="https://app.powerbi.com/view?r=eyJrIjoiOTU1MDBmNjctMTU2OC00M2U0LTk5NmUtOWFlMWZjYzhkOTgxIiwidCI6ImJjZWYxYWJlLWVjZjgtNDMxNy1iM2FmLTY0NzQ3MmMwM2Y3OSJ9&pageName=d732bc39dbb48308feda" target="_blank" class="project-link">Live Dashboard ↗</a>
-                </div>
-            </div>
-
-            <!-- Project 3: Retail Loyalty -->
-            <div class="project-card">
-                <div class="project-header">
-                    <span class="project-number">03</span>
-                    <span class="project-category">— CRM & Loyalty Analytics</span>
-                </div>
-                <h3 class="project-name">Retail Loyalty Program Analysis</h3>
-                <div class="project-tags">
-                    <span>PostgreSQL</span><span>Python</span><span>Pandas</span><span>Seaborn</span>
-                </div>
-                <div class="project-par">
-                    <div class="par-item">
-                        <span class="par-label">Problem</span>
-                        <p>A multi-table retail dataset spanning 8 years of customer, transaction, and loyalty data had no structured analysis of retention, churn, or CLV.</p>
-                    </div>
-                    <div class="par-item">
-                        <span class="par-label">Action</span>
-                        <p>Designed a PostgreSQL database, cleaned data (duplicates, NULLs, format inconsistencies), then ran advanced SQL queries with CTEs and window functions. Built Python visualisations for CLV, churn, and loyalty tier analysis.</p>
-                    </div>
-                    <div class="par-item">
-                        <span class="par-label">Result</span>
-                        <p>Calculated customer lifetime value, churn rates, and loyalty duration across tiers. Compared behaviour between loyalty and non-loyalty customers with cohort-based insights.</p>
-                    </div>
-                </div>
-                <div class="project-impact">
-                    <strong>Impact:</strong> End-to-end analytics pipeline from database design to visual reporting, simulating real-world CRM decision-making.
-                </div>
-                <a href="https://github.com/roswel0710/Retail-Loyalty.git" target="_blank" class="project-link">View on GitHub ↗</a>
-            </div>
-
-            <!-- Project 4: Advanced SQL -->
-            <div class="project-card">
-                <div class="project-header">
-                    <span class="project-number">04</span>
-                    <span class="project-category">— Business Intelligence</span>
-                </div>
-                <h3 class="project-name">Advanced SQL Data Analytics Pipeline</h3>
-                <div class="project-tags">
-                    <span>PostgreSQL</span><span>Window Functions</span><span>CTEs</span><span>Star Schema</span>
-                </div>
-                <div class="project-par">
-                    <div class="par-item">
-                        <span class="par-label">Problem</span>
-                        <p>Raw retail data across customer, product, and sales tables needed a structured analytics pipeline for segmentation and reporting.</p>
-                    </div>
-                    <div class="par-item">
-                        <span class="par-label">Action</span>
-                        <p>Created a star schema in PostgreSQL, performed EDA, built customer segments (VIP, Regular, New) based on recency and spend, and created analytical views for reporting.</p>
-                    </div>
-                    <div class="par-item">
-                        <span class="par-label">Result</span>
-                        <p>Delivered two business-ready views: <code>report_customers</code> (profiles, KPIs, segments, CLV) and <code>report_products</code> (sales lifecycle, performance classification).</p>
-                    </div>
-                </div>
-                <div class="project-impact">
-                    <strong>Impact:</strong> Full data pipeline from schema design to BI-ready reporting using only SQL.
-                </div>
-                <a href="https://github.com/roswel0710/SQL-Data-Analytics-Project.git" target="_blank" class="project-link">View on GitHub ↗</a>
-            </div>
-
-            <!-- Project 5: Capstone -->
-            <div class="project-card">
-                <div class="project-header">
-                    <span class="project-number">05</span>
-                    <span class="project-category">— Capstone Project</span>
-                </div>
-                <h3 class="project-name">Stack Overflow Developer Survey Analysis</h3>
-                <div class="project-tags">
-                    <span>Python</span><span>SQL</span><span>Pandas</span><span>Looker Studio</span>
-                </div>
-                <div class="project-par">
-                    <div class="par-item">
-                        <span class="par-label">Problem</span>
-                        <p>Needed data-backed insights into how developer compensation, job satisfaction, and tech preferences vary across roles, age groups, and regions.</p>
-                    </div>
-                    <div class="par-item">
-                        <span class="par-label">Action</span>
-                        <p>Loaded Stack Overflow survey data into Pandas and SQLite. Cleaned, preprocessed, and ran SQL queries for grouping and filtering. Created advanced visualisations (pie, bar, scatter, bubble charts) and styled outputs with Looker Studio.</p>
-                    </div>
-                    <div class="par-item">
-                        <span class="par-label">Result</span>
-                        <p>Found that older developers earn more but participate less in forums; freelancers show polarised satisfaction; compensation rises with experience but satisfaction plateaus after 15 years.</p>
-                    </div>
-                </div>
-                <div class="project-impact">
-                    <strong>Impact:</strong> Full capstone demonstrating end-to-end data analysis from survey data to visual storytelling.
-                </div>
-                <a href="https://github.com/roswel0710/CapstoneProject.git" target="_blank" class="project-link">View on GitHub ↗</a>
-            </div>
-
-            <!-- Project 6: Library -->
-            <div class="project-card">
-                <div class="project-header">
-                    <span class="project-number">06</span>
-                    <span class="project-category">— Database Design</span>
-                </div>
-                <h3 class="project-name">Library Database Management System</h3>
-                <div class="project-tags">
-                    <span>SQL</span><span>Stored Procedures</span><span>DDL/DML</span>
-                </div>
-                <div class="project-par">
-                    <div class="par-item">
-                        <span class="par-label">Problem</span>
-                        <p>Library operations (rentals, returns, stock, staff tracking) had no structured database system for management and reporting.</p>
-                    </div>
-                    <div class="par-item">
-                        <span class="par-label">Action</span>
-                        <p>Designed a normalised relational database with stored procedures for automated workflows. Built analytical queries using joins, subqueries, aggregates, and window functions.</p>
-                    </div>
-                    <div class="par-item">
-                        <span class="par-label">Result</span>
-                        <p>Identified high-performing branches, tracked most borrowed books, measured staff productivity, and analysed member engagement.</p>
-                    </div>
-                </div>
-                <div class="project-impact">
-                    <strong>Impact:</strong> Demonstrates core SQL skills: DDL/DML, stored procedures, triggers, data cleaning, and operational reporting.
-                </div>
-                <a href="https://github.com/roswel0710/Library-Database-Management.git" target="_blank" class="project-link">View on GitHub ↗</a>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ===================== EXPERIENCE ===================== -->
-    <section class="section section-dark" id="experience">
-        <div class="container">
-            <h2 class="section-title">Career Journey<span class="accent">.</span></h2>
-
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">Nov 2023 – Jan 2026</div>
-                        <h3>Store Manager <span class="timeline-sub">(Customer & Analytics Specialist)</span></h3>
-                        <p class="timeline-company">Sainsbury's · Scotland, United Kingdom</p>
-                        <ul class="timeline-list">
-                            <li>Led operations in a high-footfall store generating <strong>£945K+ monthly revenue</strong>, managing a team of <strong>40 colleagues</strong>.</li>
-                            <li>Designed Power BI and Excel dashboards tracking sales performance, targets, availability, and operational KPIs.</li>
-                            <li>Drove <strong>24% year-on-year sales growth</strong> through sales floor execution, customer engagement, and product presentation.</li>
-                            <li>Improved C-SAT ratings by <strong>18%</strong> through hands-on customer service during peak trading periods.</li>
-                            <li>Managed shrink, waste, and asset protection, improving stock accuracy and reducing operational losses.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">Jun 2019 – Aug 2023</div>
-                        <h3>Senior Trade Marketing Executive</h3>
-                        <p class="timeline-company">ITC Limited · Mumbai, India</p>
-                        <ul class="timeline-list">
-                            <li>Supported retail execution across <strong>1,000+ customer-facing outlets</strong>, managing a team of <strong>33 field and retail colleagues</strong>.</li>
-                            <li>Reduced out-of-stocks by <strong>18%</strong> through improved stock flow, merchandising compliance, and availability monitoring.</li>
-                            <li>Achieved <strong>20% faster market penetration</strong> for new brand launches through visual execution and customer-focused merchandising.</li>
-                            <li>Applied customer segmentation and behavioral analysis to optimize product placement and promotional mechanics.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">Dec 2015 – Apr 2017</div>
-                        <h3>Plant Operator</h3>
-                        <p class="timeline-company">Government of Dubai · Dubai, UAE</p>
-                        <ul class="timeline-list">
-                            <li>Maintained <strong>100% adherence</strong> to environmental and safety regulations using Excel tracking logs.</li>
-                            <li>Contributed to a <strong>10% reduction</strong> in unplanned equipment failures through data-driven downtime tracking.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">Oct 2014 – Nov 2015</div>
-                        <h3>Research Analyst</h3>
-                        <p class="timeline-company">Directi, Media.net · Mumbai, India</p>
-                        <ul class="timeline-list">
-                            <li>Achieved <strong>20% improvement</strong> in organic search rankings through SEO analysis and content optimisation.</li>
-                            <li>Created dashboards and weekly reports for 3 departments, improving cross-functional communication by <strong>15%</strong>.</li>
-                            <li>Maintained databases with <strong>91% data accuracy</strong>, enabling reliable real-time analytics.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===================== CONTACT ===================== -->
-    <section class="section section-contact" id="contact">
-        <div class="container">
-            <h2 class="section-title">Let's build something together<span class="accent">.</span></h2>
-            <p class="section-subtitle contact-subtitle">
-                Open to data analyst roles in Dubai and Mumbai, collaborations,
-                and interesting conversations about retail analytics.<br>
-                Reach out on any platform below.
-            </p>
-            <div class="contact-grid">
-                <a href="mailto:ros123almeida@gmail.com" class="contact-card">
-                    <span class="contact-icon">✉️</span>
-                    <span>ros123almeida@gmail.com</span>
                 </a>
-                <a href="https://github.com/roswel0710" target="_blank" class="contact-card">
-                    <span class="contact-icon">💻</span>
-                    <span>GitHub</span>
+
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiOTU1MDBmNjctMTU2OC00M2U0LTk5NmUtOWFlMWZjYzhkOTgxIiwidCI6ImJjZWYxYWJlLWVjZjgtNDMxNy1iM2FmLTY0NzQ3MmMwM2Y3OSJ9&pageName=d732bc39dbb48308feda" target="_blank" class="project-card">
+                    <div class="project-info">
+                        <h3>Plant Co. Performance Report</h3>
+                        <p>YTD vs PYTD comparison dashboard with DAX Switch Measures for instant metric toggling across sales, gross profit, and quantity.</p>
+                        <span class="project-cta">Live Dashboard ↗</span>
+                    </div>
+                    <div class="project-img" style="background: linear-gradient(135deg, #c9cedb, #a8b0c4);">
+                        <span class="project-emoji">🌿</span>
+                        <span class="project-tool">Power BI + DAX</span>
+                    </div>
                 </a>
-                <a href="https://www.linkedin.com/in/rosewal-almeida/" target="_blank" class="contact-card">
-                    <span class="contact-icon">🔗</span>
-                    <span>LinkedIn</span>
+
+                <a href="https://github.com/roswel0710/Retail-Loyalty.git" target="_blank" class="project-card">
+                    <div class="project-info">
+                        <h3>Retail Loyalty Program Analysis</h3>
+                        <p>End-to-end CRM pipeline: PostgreSQL database design, data cleaning, CLV/churn analysis, and Python visualisations across 8 years of loyalty data.</p>
+                        <span class="project-cta">View Project ↗</span>
+                    </div>
+                    <div class="project-img" style="background: linear-gradient(135deg, #583e61, #7a5688);">
+                        <span class="project-emoji">🛒</span>
+                        <span class="project-tool">SQL + Python</span>
+                    </div>
                 </a>
-                <a href="https://rosewalalmeida.carrd.co/" target="_blank" class="contact-card">
-                    <span class="contact-icon">🌐</span>
-                    <span>Portfolio</span>
+
+                <a href="https://github.com/roswel0710/SQL-Data-Analytics-Project.git" target="_blank" class="project-card">
+                    <div class="project-info">
+                        <h3>Advanced SQL Data Analytics</h3>
+                        <p>Full data pipeline: star schema design, customer segmentation (VIP/Regular/New), window functions, and two BI-ready analytical views.</p>
+                        <span class="project-cta">View Project ↗</span>
+                    </div>
+                    <div class="project-img" style="background: linear-gradient(135deg, #0c0c0c, #2a2a2a);">
+                        <span class="project-emoji">🔍</span>
+                        <span class="project-tool">PostgreSQL</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/roswel0710/CapstoneProject.git" target="_blank" class="project-card">
+                    <div class="project-info">
+                        <h3>Stack Overflow Survey Capstone</h3>
+                        <p>Data-driven capstone exploring developer compensation, satisfaction, and tech preferences using Python, SQL, and Looker Studio visualisations.</p>
+                        <span class="project-cta">View Project ↗</span>
+                    </div>
+                    <div class="project-img" style="background: linear-gradient(135deg, #eae7eb, #d4d0d6);">
+                        <span class="project-emoji">📋</span>
+                        <span class="project-tool">Python + Looker</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/roswel0710/Library-Database-Management.git" target="_blank" class="project-card">
+                    <div class="project-info">
+                        <h3>Library Database Management</h3>
+                        <p>Relational database system with stored procedures, automated workflows, and analytical queries for branch performance and member engagement.</p>
+                        <span class="project-cta">View Project ↗</span>
+                    </div>
+                    <div class="project-img" style="background: linear-gradient(135deg, #0a0b0b, #1e2020);">
+                        <span class="project-emoji">📚</span>
+                        <span class="project-tool">SQL</span>
+                    </div>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- ===================== FOOTER ===================== -->
-    <footer class="footer">
-        <p>Designed & built by Rosewal Almeida · Data Analyst · Dubai, UAE · 2026</p>
+    <!-- ABOUT -->
+    <section class="section section-about" id="about">
+        <div class="container">
+            <h2 class="section-heading">About</h2>
+            <div class="about-content">
+                <p class="about-text">Hi, I'm <strong>Rosewal Almeida</strong>, a data analyst based in Dubai with 7+ years of experience in retail operations (Sainsbury's, UK) and FMCG trade marketing (ITC Limited, India). I hold an MSc in Marketing & Brand Management from the University of Stirling and a BSc in Information Technology from the University of Mumbai. I'm passionate about turning complex retail data into clear, actionable insights using Power BI, SQL, Python, and Excel — and I bring the domain expertise to know which numbers actually drive the business.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+        <div class="container">
+            <h2 class="section-heading">Experience</h2>
+            <p class="section-sub">7+ years across retail, FMCG, and data — from shop-floor leadership to dashboard-driven decision-making.</p>
+            <div class="exp-table">
+                <div class="exp-row">
+                    <span class="exp-company">Sainsbury's</span>
+                    <span class="exp-role">Store Manager (Customer & Analytics)</span>
+                    <span class="exp-date">2023 – 2026</span>
+                </div>
+                <div class="exp-row">
+                    <span class="exp-company">ITC Limited</span>
+                    <span class="exp-role">Senior Trade Marketing Executive</span>
+                    <span class="exp-date">2019 – 2023</span>
+                </div>
+                <div class="exp-row">
+                    <span class="exp-company">Government of Dubai</span>
+                    <span class="exp-role">Plant Operator</span>
+                    <span class="exp-date">2015 – 2017</span>
+                </div>
+                <div class="exp-row">
+                    <span class="exp-company">Directi, Media.net</span>
+                    <span class="exp-role">Research Analyst</span>
+                    <span class="exp-date">2014 – 2015</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECH STACK MARQUEE -->
+    <section class="section section-stack">
+        <div class="container">
+            <h2 class="section-heading">Tech Stack</h2>
+        </div>
+        <div class="marquee-wrapper">
+            <div class="marquee">
+                <div class="marquee-track">
+                    <span class="stack-chip">Power BI</span>
+                    <span class="stack-chip">DAX</span>
+                    <span class="stack-chip">Power Query</span>
+                    <span class="stack-chip">PostgreSQL</span>
+                    <span class="stack-chip">MySQL</span>
+                    <span class="stack-chip">Python</span>
+                    <span class="stack-chip">Pandas</span>
+                    <span class="stack-chip">NumPy</span>
+                    <span class="stack-chip">Matplotlib</span>
+                    <span class="stack-chip">Seaborn</span>
+                    <span class="stack-chip">Excel</span>
+                    <span class="stack-chip">IBM Cognos</span>
+                    <span class="stack-chip">Looker Studio</span>
+                    <span class="stack-chip">MicroStrategy</span>
+                    <span class="stack-chip">Git / GitHub</span>
+                    <!-- duplicate for seamless loop -->
+                    <span class="stack-chip">Power BI</span>
+                    <span class="stack-chip">DAX</span>
+                    <span class="stack-chip">Power Query</span>
+                    <span class="stack-chip">PostgreSQL</span>
+                    <span class="stack-chip">MySQL</span>
+                    <span class="stack-chip">Python</span>
+                    <span class="stack-chip">Pandas</span>
+                    <span class="stack-chip">NumPy</span>
+                    <span class="stack-chip">Matplotlib</span>
+                    <span class="stack-chip">Seaborn</span>
+                    <span class="stack-chip">Excel</span>
+                    <span class="stack-chip">IBM Cognos</span>
+                    <span class="stack-chip">Looker Studio</span>
+                    <span class="stack-chip">MicroStrategy</span>
+                    <span class="stack-chip">Git / GitHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT / FOOTER -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-top">
+                <span class="footer-label">Let's work together</span>
+                <div class="footer-links">
+                    <a href="https://github.com/roswel0710" target="_blank">GitHub ↑</a>
+                    <a href="https://www.linkedin.com/in/rosewal-almeida/" target="_blank">LinkedIn ↑</a>
+                    <a href="https://rosewalalmeida.carrd.co/" target="_blank">Portfolio ↑</a>
+                </div>
+            </div>
+            <p class="footer-blurb">I'm currently open to new opportunities — data analyst roles in Dubai or Mumbai. If you need someone who understands both the data and the retail floor, I'd love to talk!</p>
+            <a href="mailto:ros123almeida@gmail.com" class="footer-email">ros123almeida@gmail.com</a>
+            <div class="footer-bottom">
+                <span>© Crafted with ❤️ by Rosewal</span>
+                <a href="#hero" class="back-to-top">↑ Back to top</a>
+            </div>
+        </div>
     </footer>
-
-    <!-- ===================== RESUME MODAL ===================== -->
-    <div class="modal-overlay" id="resumeModal">
-        <div class="modal">
-            <button class="modal-close" id="modalClose">✕</button>
-            <h2>Rosewal Simon Almeida</h2>
-            <p class="modal-meta">ros123almeida@gmail.com | Dubai, UAE | +971 589202385 | <a href="https://www.linkedin.com/in/rosewal-almeida/" target="_blank">LinkedIn</a> | <a href="https://github.com/roswel0710" target="_blank">GitHub</a></p>
-
-            <div class="modal-section">
-                <h3>About Me</h3>
-                <p>Customer-focused retail leader with 7+ years of experience in fast-paced, high-footfall retail environments. Microsoft Certified (PL-300) Data Analyst with proven ability to drive sales performance, deliver exceptional customer experience, lead store operations, and develop high-performing teams. Passionate about translating retail data into actionable business insights using Power BI, SQL, Python, and Excel.</p>
-            </div>
-
-            <div class="modal-section">
-                <h3>Skills</h3>
-                <p><strong>Data & BI Tools:</strong> Power BI (DAX, Power Query, Data Modelling), SQL (PostgreSQL, MySQL – Joins, CTEs, Window Functions), Python (Pandas, NumPy, Matplotlib, Seaborn), Excel (Advanced Formulas, PivotTables, Dashboards), IBM Cognos Analytics, Looker Studio, MicroStrategy</p>
-                <p><strong>Analytics:</strong> Sell-In & Sell-Out Analysis, Customer Segmentation & Retention, KPI Frameworks & Scorecards, Promotion Post-Evaluation, Demand Gap Analysis, Commercial & Trend Analysis</p>
-                <p><strong>Domain:</strong> Retail Operations, FMCG Trade Marketing, Pricing & Forecasting, Omni-Channel Fulfillment, Stakeholder Collaboration, Process Improvement</p>
-            </div>
-
-            <div class="modal-section">
-                <h3>Experience</h3>
-                <div class="modal-entry">
-                    <strong>Store Manager (Customer & Analytics Specialist) — Sainsbury's, Scotland, UK</strong>
-                    <span class="modal-date">Nov 2023 – Jan 2026</span>
-                    <ul>
-                        <li>Led operations in a store generating £945K+ monthly revenue, managing 40 colleagues.</li>
-                        <li>Designed Power BI and Excel dashboards for sales, availability, and KPI tracking.</li>
-                        <li>Drove 24% YoY sales growth; improved C-SAT ratings by 18%.</li>
-                        <li>Managed shrink, waste, asset protection, and staffing/scheduling.</li>
-                    </ul>
-                </div>
-                <div class="modal-entry">
-                    <strong>Senior Trade Marketing Executive — ITC Limited, Mumbai, India</strong>
-                    <span class="modal-date">Jun 2019 – Aug 2023</span>
-                    <ul>
-                        <li>Supported execution across 1,000+ outlets with a team of 33.</li>
-                        <li>Reduced out-of-stocks by 18%; achieved 20% faster market penetration for new launches.</li>
-                        <li>Applied segmentation and behavioral analysis to optimise placements and promotions.</li>
-                    </ul>
-                </div>
-                <div class="modal-entry">
-                    <strong>Plant Operator — Government of Dubai, UAE</strong>
-                    <span class="modal-date">Dec 2015 – Apr 2017</span>
-                    <ul>
-                        <li>100% safety compliance; 10% reduction in unplanned equipment failures via data tracking.</li>
-                    </ul>
-                </div>
-                <div class="modal-entry">
-                    <strong>Research Analyst — Directi, Media.net, Mumbai, India</strong>
-                    <span class="modal-date">Oct 2014 – Nov 2015</span>
-                    <ul>
-                        <li>20% improvement in organic search rankings; dashboards for 3 departments; 91% data accuracy.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="modal-section">
-                <h3>Education</h3>
-                <p><strong>MSc Marketing & Brand Management</strong> — University of Stirling, Scotland, UK <span class="modal-date">Sept 2024</span></p>
-                <p><strong>MMS Marketing</strong> — University of Mumbai, India <span class="modal-date">May 2019</span></p>
-                <p><strong>BSc Information Technology</strong> — University of Mumbai, India <span class="modal-date">May 2014</span></p>
-            </div>
-
-            <div class="modal-section">
-                <h3>Certifications</h3>
-                <ul>
-                    <li>Power BI Data Analyst Associate (PL-300) — Microsoft <span class="modal-date">Sept 2025</span></li>
-                    <li>Associate Data Analyst in SQL — DataCamp <span class="modal-date">July 2025</span></li>
-                    <li>IBM Data Analyst Professional Certificate — Coursera <span class="modal-date">June 2025</span></li>
-                    <li>Google Analytics 4 Certification — Google <span class="modal-date">July 2024</span></li>
-                </ul>
-            </div>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>

@@ -7,100 +7,109 @@
 
 <title>Rosewal Almeida | Data Analyst</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=200">
 
-<link rel="stylesheet" href="style.css?v=50">
 </head>
 
 <body>
 
 <nav class="nav">
-  <div class="nav-inner">
-    <a href="#" class="nav-name">Rosewal Almeida</a>
-    <div class="nav-links">
-      <a href="#work">Projects</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </div>
+  <div class="logo">Rosewal</div>
+  <div class="nav-links">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
   </div>
 </nav>
 
 <header class="hero">
-  <div class="container">
-    <h1 class="hero-title">Data Analyst who turns data into <span>business decisions</span></h1>
-    <p class="hero-sub">7+ years in retail & FMCG. SQL, Python, Power BI.</p>
-  </div>
+  <h1>
+    I turn data into<br>
+    <span>business decisions</span>
+  </h1>
+  <p>Data Analyst | Retail & FMCG | SQL • Python • Power BI</p>
 </header>
 
-<section class="section" id="work">
-  <div class="container">
+<!-- PROJECTS -->
+
+<section id="work" class="work">
+
+  <!-- FEATURED PROJECT -->
+
+  <div class="project-feature">
 
 ```
-<h2 class="section-title">Featured Work</h2>
+<img src="images/customer.png">
 
-<div class="projects-grid">
+<div class="project-text">
+  <h2>Customer Shopping Behavior Analysis</h2>
 
-  <a href="https://github.com/roswel0710/Customer-Shopping-Behavior" target="_blank" class="pcard">
-    <div class="pcard-img">
-      <img src="images/customer.png">
-    </div>
-    <div class="pcard-info">
-      <h3>Customer Shopping Behavior Analysis</h3>
-      <p>End-to-end pipeline using SQL, Python & Power BI to uncover revenue drivers.</p>
-    </div>
+  <p>
+    Built an end-to-end analytics pipeline to identify high-value customers,
+    optimize discount strategy, and uncover revenue drivers.
+  </p>
+
+  <ul>
+    <li>Segmented customers into behavioral groups</li>
+    <li>Analyzed impact of discounts on revenue</li>
+    <li>Created interactive Power BI dashboard</li>
+  </ul>
+
+  <a href="https://github.com/roswel0710/Customer-Shopping-Behavior" target="_blank">
+    View Project →
   </a>
-
-  <div class="pcard">
-    <div class="pcard-img">
-      <img src="images/spotify.png">
-    </div>
-    <div class="pcard-info">
-      <h3>Spotify Listening Analysis</h3>
-      <p>Explored listening behaviour to identify engagement trends.</p>
-    </div>
-  </div>
-
-  <div class="pcard">
-    <div class="pcard-img">
-      <img src="images/blinkit.png">
-    </div>
-    <div class="pcard-info">
-      <h3>Blinkit Dashboard</h3>
-      <p>Retail analytics dashboard with KPI tracking and insights.</p>
-    </div>
-  </div>
-
-  <div class="pcard">
-    <div class="pcard-img">
-      <img src="images/sql.png">
-    </div>
-    <div class="pcard-info">
-      <h3>Advanced SQL Analytics</h3>
-      <p>Customer segmentation and analytical queries using PostgreSQL.</p>
-    </div>
-  </div>
 
 </div>
 ```
 
   </div>
+
+  <!-- OTHER PROJECTS -->
+
+  <div class="grid">
+
+```
+<div class="card">
+  <img src="images/spotify.png">
+  <h3>Spotify Analysis</h3>
+  <p>User listening behavior & trend insights</p>
+</div>
+
+<div class="card">
+  <img src="images/blinkit.png">
+  <h3>Blinkit Dashboard</h3>
+  <p>Retail KPI tracking dashboard</p>
+</div>
+
+<div class="card">
+  <img src="images/sql.png">
+  <h3>SQL Analytics</h3>
+  <p>Customer segmentation & data modeling</p>
+</div>
+```
+
+  </div>
+
 </section>
 
-<section class="section section-alt" id="about">
-  <div class="container">
-    <h2 class="section-title">About</h2>
-    <p>Data analyst with strong retail domain knowledge. I build insights that drive real business outcomes.</p>
-  </div>
+<!-- ABOUT -->
+
+<section id="about" class="about">
+  <h2>About</h2>
+  <p>
+    Data analyst with 7+ years of experience in retail & FMCG.
+    I specialize in translating complex data into actionable business insights.
+  </p>
 </section>
 
-<footer class="footer" id="contact">
-  <div class="container">
-    <p class="footer-text">ros123almeida@gmail.com</p>
-  </div>
+<!-- CONTACT -->
+
+<footer id="contact">
+  <p>ros123almeida@gmail.com</p>
 </footer>
 
-<script src="script.js?v=50"></script>
+<script src="script.js?v=200"></script>
 
 </body>
 </html>

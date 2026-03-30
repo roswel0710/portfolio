@@ -1,42 +1,17 @@
-/* TECH TABS */
-function showTech(tab) {
-document.querySelectorAll('.tech-content').forEach(el => {
-el.classList.remove('active');
-});
-document.getElementById(tab).classList.add('active');
-}
+const elements = document.querySelectorAll('.pcard, .hero, .section');
 
-/* SCROLL REVEAL */
-const elements = document.querySelectorAll('.hero, .featured, .card, .tech');
-
-const observer = new IntersectionObserver(entries => {
-entries.forEach(entry => {
-if (entry.isIntersecting) {
-entry.target.classList.add('show');
+const observer = new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.style.opacity=1;
+entry.target.style.transform='translateY(0)';
 }
 });
-}, { threshold: 0.1 });
-
-elements.forEach(el => observer.observe(el));
-
-/* ACTIVE NAV */
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".nav-links a");
-
-window.addEventListener("scroll", () => {
-let current = "";
-
-sections.forEach(section => {
-const sectionTop = section.offsetTop - 100;
-if (scrollY >= sectionTop) {
-current = section.getAttribute("id");
-}
 });
 
-navLinks.forEach(a => {
-a.classList.remove("active");
-if (a.getAttribute("href") === "#" + current) {
-a.classList.add("active");
-}
-});
+elements.forEach(el=>{
+el.style.opacity=0;
+el.style.transform='translateY(40px)';
+el.style.transition='all 0.6s ease';
+observer.observe(el);
 });

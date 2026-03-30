@@ -1,42 +1,42 @@
-/* Rosewal Almeida — Portfolio Scripts */
-
-// Dubai live clock
-function updateTime() {
-    const el = document.getElementById('navTime');
-    if (!el) return;
-    el.textContent = new Date().toLocaleTimeString('en-GB', {
-        timeZone: 'Asia/Dubai', hour: '2-digit', minute: '2-digit', hour12: false
-    });
+/* TECH TABS */
+function showTech(tab) {
+document.querySelectorAll('.tech-content').forEach(el => {
+el.classList.remove('active');
+});
+document.getElementById(tab).classList.add('active');
 }
-updateTime();
-setInterval(updateTime, 30000);
 
-// Scroll reveal with stagger
-const els = document.querySelectorAll(
-    '.section-title, .section-sub, .hero-badge, .hero-title, .hero-sub, .hero-ctas, ' +
-    '.hero-card, .hero-tagline, .pcard, ' +
-    '.about-right, .exp-row, .cert-card, ' +
-    '.footer-head, .footer-text, .footer-email'
-);
-els.forEach(e => e.classList.add('reveal'));
+/* SCROLL REVEAL */
+const elements = document.querySelectorAll('.hero, .featured, .card, .tech');
 
-const obs = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const p = entry.target.parentElement;
-            const siblings = p ? Array.from(p.querySelectorAll('.reveal')) : [];
-            const i = siblings.indexOf(entry.target);
-            entry.target.style.transitionDelay = `${Math.max(0, i) * 60}ms`;
-            entry.target.classList.add('visible');
-        }
-    });
-}, { threshold: 0.06, rootMargin: '0px 0px -30px 0px' });
+const observer = new IntersectionObserver(entries => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.classList.add('show');
+}
+});
+}, { threshold: 0.1 });
 
-els.forEach(e => obs.observe(e));
+elements.forEach(el => observer.observe(el));
 
-// Nav shadow
-const nav = document.querySelector('.nav');
-window.addEventListener('scroll', () => {
-    nav.style.boxShadow = window.scrollY > 30
-        ? '0 1px 12px rgba(0,0,0,0.05)' : 'none';
+/* ACTIVE NAV */
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-links a");
+
+window.addEventListener("scroll", () => {
+let current = "";
+
+sections.forEach(section => {
+const sectionTop = section.offsetTop - 100;
+if (scrollY >= sectionTop) {
+current = section.getAttribute("id");
+}
+});
+
+navLinks.forEach(a => {
+a.classList.remove("active");
+if (a.getAttribute("href") === "#" + current) {
+a.classList.add("active");
+}
+});
 });
